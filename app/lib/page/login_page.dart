@@ -69,7 +69,11 @@ class LoginPage extends StatelessWidget {
             borderRadius: BorderRadius.circular(4),
             borderSide: BorderSide(color: Color(0xff60A129)),
           ),
-          hintText: 'Email',
+          hintText: 'username/email',
+          hintStyle: GoogleFonts.poppins(
+            color: Color(0xffC4C4C4),
+            height: 1,
+          ),
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10.0),
           ),
@@ -85,6 +89,10 @@ class LoginPage extends StatelessWidget {
             borderSide: BorderSide(color: Color(0xff60A129)),
           ),
           hintText: 'username/email',
+          hintStyle: GoogleFonts.poppins(
+            color: Color(0xffC4C4C4),
+            height: 1,
+          ),
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10.0),
           ),
@@ -188,7 +196,7 @@ class LoginPage extends StatelessWidget {
             ),
             GestureDetector(
               onTap: () {
-                Navigator.pushNamed(context, '/home');
+                Navigator.pushNamed(context, '/main');
               },
               child: buttonLogin(),
             ),
