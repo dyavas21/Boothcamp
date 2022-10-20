@@ -1,4 +1,5 @@
 import 'package:app/cubit/page_cubit.dart';
+import 'package:app/page/detail_daur_shop_page.dart';
 import 'package:app/page/main_page.dart';
 import 'package:app/page/login_page.dart';
 import 'package:app/page/splash_page.dart';
@@ -27,6 +28,7 @@ class MyApp extends StatelessWidget {
           '/': (context) => SplashPage(),
           '/login': (context) => LoginPage(),
           '/main': (context) => MainPage(),
+          '/daur-shop1': (context) => DetailDaurShopPage(),
         },
       ),
     );

@@ -9,23 +9,26 @@ class CustomBottomNav extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Image.asset(
-          imgUrl!,
-          width: 20,
-        ),
-        SizedBox(
-          height: 8,
-        ),
-        Text(
-          title!,
-          style: GoogleFonts.poppins(
-            fontSize: 10,
-            fontWeight: FontWeight.w300,
+    return Padding(
+      padding: EdgeInsets.only(top: 19),
+      child: Column(
+        children: [
+          Image.asset(
+            imgUrl!,
+            width: 20,
           ),
-        ),
-      ],
+          SizedBox(
+            height: 8,
+          ),
+          Text(
+            title!,
+            style: GoogleFonts.poppins(
+              fontSize: 10,
+              fontWeight: FontWeight.w300,
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

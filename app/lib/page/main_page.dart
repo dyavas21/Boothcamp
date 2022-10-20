@@ -1,3 +1,4 @@
+import 'package:app/page/challange_page.dart';
 import 'package:app/page/home_page.dart';
 import 'package:app/widget/custom_bottom_nav.dart';
 import 'package:flutter/material.dart';
@@ -15,6 +16,7 @@ class MainPage extends StatelessWidget {
       return Align(
         alignment: Alignment.bottomCenter,
         child: Container(
+          color: Colors.white,
           padding: EdgeInsets.symmetric(
             horizontal: 40,
           ),

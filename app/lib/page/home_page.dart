@@ -1,3 +1,4 @@
+import 'package:app/widget/custom_news.dart';
 import 'package:app/widget/custom_scroll_daur.dart';
 import 'package:app/widget/custom_scroll_home.dart';
 import 'package:flutter/material.dart';
@@ -204,11 +205,16 @@ class HomePage extends StatelessWidget {
           margin: EdgeInsets.only(left: 24),
           child: Row(
             children: [
-              CustomScrollDaur(
-                imgUrl: 'assets/kemeja.png',
-                title: 'Kemeja Daur',
-                like: '218 likes',
-                price: '24.000',
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushNamed(context, '/daur-shop1');
+                },
+                child: CustomScrollDaur(
+                  imgUrl: 'assets/kemeja.png',
+                  title: 'Kemeja Daur',
+                  like: '218 likes',
+                  price: '24.000',
+                ),
               ),
               CustomScrollDaur(
                 imgUrl: 'assets/bag.png',
@@ -260,6 +266,29 @@ class HomePage extends StatelessWidget {
       );
     }
 
+    Widget NewsSection() {
+      return Column(
+        children: [
+          CustomNews(
+            imgUrl: 'assets/news1.png',
+            title: 'Ekspor Kendaraan Listrik',
+            desc:
+                'Indonesia berhasil mengekspor kendaraan listrik produksi dalam negeri',
+          ),
+          CustomNews(
+            imgUrl: 'assets/news2.png',
+            title: 'Petisi',
+            desc: 'Ajak Bankmu untuk divestasi energi tidak terbaharukan',
+          ),
+          CustomNews(
+            imgUrl: 'assets/news2.png',
+            title: 'Petisi',
+            desc: 'Ajak Bankmu untuk divestasi energi tidak terbaharukan',
+          ),
+        ],
+      );
+    }
+
     return Scaffold(
       body: SafeArea(
         child: ListView(
@@ -268,11 +297,21 @@ class HomePage extends StatelessWidget {
               padding: const EdgeInsets.symmetric(
                 horizontal: 24,
               ),
-              child: Text(
-                'Hi, Nadya Zafira',
-                style: GoogleFonts.poppins(
-                  color: Color(0xff000000),
-                ),
+              child: RichText(
+                text: TextSpan(
+                    text: 'Hi, ',
+                    style: GoogleFonts.poppins(
+                      color: Color(0xff000000),
+                    ),
+                    children: <TextSpan>[
+                      TextSpan(
+                        text: 'Nadya Zafira',
+                        style: GoogleFonts.poppins(
+                          color: Color(0xff000000),
+                          fontWeight: FontWeight.w600,
+                        ),
+                      )
+                    ]),
               ),
             ),
             SizedBox(
@@ -301,6 +340,10 @@ class HomePage extends StatelessWidget {
             Title2(),
             SizedBox(
               height: 11,
+            ),
+            NewsSection(),
+            SizedBox(
+              height: 50,
             ),
           ],
         ),
