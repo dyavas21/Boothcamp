@@ -1,3 +1,4 @@
+import 'package:app/widget/custom_container_challage.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -55,6 +56,7 @@ class ChallangePage extends StatelessWidget {
               top: 13,
             ),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
                   children: [
@@ -110,6 +112,62 @@ class ChallangePage extends StatelessWidget {
                       ),
                     ],
                   ),
+                ),
+                SizedBox(
+                  height: 29,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text('On Progress'),
+                    Text('View Details'),
+                  ],
+                ),
+                SizedBox(
+                  height: 19,
+                ),
+                CustomContainerChallange(
+                  title: 'Kompos Rumah Tangga',
+                  desc: 'Rp. 5.000 - 10.000',
+                ),
+                SizedBox(
+                  height: 19,
+                ),
+                Text('All Challange'),
+                SizedBox(
+                  height: 19,
+                ),
+                CustomContainerChallange(
+                  title: 'Minimalisir pendingin',
+                  desc: 'Rp. 5.000',
+                ),
+                SizedBox(
+                  height: 24,
+                ),
+                CustomContainerChallange(
+                  title: 'Minimalisir pendingin',
+                  desc: 'Rp. 5.000',
+                ),
+                SizedBox(
+                  height: 24,
+                ),
+                CustomContainerChallange(
+                  title: 'Minimalisir pendingin',
+                  desc: 'Rp. 5.000',
+                ),
+                SizedBox(
+                  height: 24,
+                ),
+                CustomContainerChallange(
+                  title: 'Minimalisir pendingin',
+                  desc: 'Rp. 5.000',
+                ),
+                SizedBox(
+                  height: 24,
+                ),
+                CustomContainerChallange(
+                  title: 'Minimalisir pendingin',
+                  desc: 'Rp. 5.000',
                 ),
               ],
             ),
