@@ -1,6 +1,7 @@
 import 'package:app/pages/challange_page.dart';
 import 'package:app/pages/detail_kemeja_page.dart';
 import 'package:app/pages/home_page.dart';
+import 'package:app/pages/leaderboard_page.dart';
 import 'package:app/pages/login_page.dart';
 import 'package:app/pages/profile_page.dart';
 import 'package:app/pages/scan_page.dart';
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
         '/scan': (context) => ScanPage(),
         '/statistic': (context) => StatisticPage(),
         '/profile': (context) => ProfilePage(),
+        '/leader': (context) => LeaderboardPage(),
       },
     );
   }

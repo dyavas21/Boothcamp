@@ -105,10 +105,15 @@ class ChallangePage extends StatelessWidget {
                           ],
                         ),
                       ),
-                      Image.asset(
-                        'assets/arrow_right.png',
-                        width: 19,
-                        height: 17,
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.pushNamed(context, '/leader');
+                        },
+                        child: Image.asset(
+                          'assets/arrow_right.png',
+                          width: 19,
+                          height: 17,
+                        ),
                       ),
                     ],
                   ),

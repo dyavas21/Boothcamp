@@ -1,3 +1,4 @@
+import 'package:app/widget/custom_news.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -219,7 +220,109 @@ class StatisticPage extends StatelessWidget {
                       ],
                     ),
                   ),
-                )
+                ),
+                SizedBox(
+                  height: 34,
+                ),
+                Row(
+                  children: [
+                    Container(
+                      height: 41,
+                      width: (MediaQuery.of(context).size.width - 24 - 6) / 2,
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Color(0xffE4E8EC),
+                        ),
+                      ),
+                      child: Center(
+                        child: Text(
+                          'See Leaderboard',
+                          style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.w300,
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 18,
+                    ),
+                    Container(
+                      height: 41,
+                      width:
+                          (MediaQuery.of(context).size.width - 24 - 24 - 54) /
+                              2,
+                      decoration: BoxDecoration(
+                        color: Color(0xff60A129),
+                      ),
+                      child: Center(
+                        child: Text(
+                          'Set Target',
+                          style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.w300,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  height: 51,
+                ),
+                Row(
+                  children: [
+                    Image.asset(
+                      'assets/like.png',
+                      width: 20,
+                    ),
+                    SizedBox(
+                      width: 17,
+                    ),
+                    Text(
+                      'Recommendation',
+                      style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w300,
+                        fontSize: 16,
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  height: 14,
+                ),
+                Text(
+                  'Hai, bulan ini kamu mengalami peningkatan produksi emisi karbon yang signifikan di makananmu nih! Ikuti program diet kami di GreenRecipe atau dukung kampanye #GoVegan di GreenChallenge',
+                  style: GoogleFonts.poppins(
+                    height: 2,
+                    fontSize: 12,
+                    fontWeight: FontWeight.w300,
+                  ),
+                  textAlign: TextAlign.justify,
+                ),
+                SizedBox(
+                  height: 21,
+                ),
+                CustomNews(
+                  imgUrl: 'assets/news1.png',
+                  title: 'Makanan rendah karbon',
+                  desc:
+                      'Berikut alternatif makanan untuk mengurangi emisi kamu',
+                ),
+                CustomNews(
+                  imgUrl: 'assets/news1.png',
+                  title: 'Makanan rendah karbon',
+                  desc:
+                      'Berikut alternatif makanan untuk mengurangi emisi kamu',
+                ),
+                CustomNews(
+                  imgUrl: 'assets/news1.png',
+                  title: 'Makanan rendah karbon',
+                  desc:
+                      'Berikut alternatif makanan untuk mengurangi emisi kamu',
+                ),
+                SizedBox(
+                  height: 75,
+                ),
               ],
             ),
           ),
